@@ -1,0 +1,38 @@
+.top10Actor {
+  width: 100%;
+
+  .actorGrid {
+    width: 60%;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 150px 1.5fr 0.5fr;
+  grid-template-rows: 100px 100px;
+  gap: 0 0;
+  grid-template-areas:
+    "grid_one grid_two grid_fifth"
+    "grid_one grid_three grid_four";
+  width: 100%;
+}
+
+.grid_one {
+  grid-area: grid_one;
+}
+
+.grid_two {
+  grid-area: grid_two;
+}
+
+.grid_three {
+  grid-area: grid_three;
+}
+
+.grid_fifth {
+  grid-area: grid_fifth;
+}
+
+.grid_four {
+  grid-area: grid_four;
+}

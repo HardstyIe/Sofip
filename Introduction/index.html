@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/sass/main.css">
+  <title>Ma Page sur le cinéma</title>
+</head>
+
+<body>
+  <h1>Mon Univers cinéma</h1>
+
+  <table>
+    <thead>
+      <th>Vignette du Film</th>
+      <th>Réalisateur</th>
+      <th>Nom du film</th>
+      <th>Année de sortie</th>
+      <th>Genre</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="/assets/images/Titanic_(1997_film)_logo.svg.png" alt="logo du film Titanic"></td>
+        <td>Spielberg</td>
+        <td>Titanic</td>
+        <td>1997</td>
+        <td>drame romantique</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form action="" class="formulaire">
+    <p>Choisissez vos genre de film préferer</p>
+
+    <div class="listeImage">
+      <ul class="listeAPuces">
+        <li class="formattageListe">
+          <input type="checkbox" name="preference" id="preference">
+          <option value="film1">Action</option>
+        </li>
+        <li class="formattageListe">
+          <input type="checkbox" name="preference" id="preference">
+          <option value="film2">Comédie</option>
+        </li>
+        <li class="formattageListe">
+          <input type="checkbox" name="preference" id="preference">
+          <option value="film3">Science-Fiction</option>
+        </li>
+        <li class="formattageListe">
+          <input type="checkbox" name="preference" id="preference">
+          <option value="film4">Drama</option>
+        </li>
+      </ul>
+      <img src="/assets/images/Titanic_(1997_film)_logo.svg.png" alt="Logo du film titanic">
+    </div>
+    <div class="formInput">
+      <div class="preference">
+        <label for="prefer">Film Préferé</label>
+        <input type="text" name="prefer" id="prefer">
+      </div>
+
+      <input type="button" value="Envoyez vos Préference">
+    </div>
+  </form>
+
+</body>
+
+</html>
