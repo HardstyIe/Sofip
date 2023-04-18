@@ -11,8 +11,10 @@ object {
 header {
   height: 75px;
   width: 100%;
+  background-color: #000049;
 }
 header nav {
+  height: 75px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -44,7 +46,7 @@ header nav ul a:hover {
 }
 
 @media all and (max-width: 480px) {
-  nav li {
+  header nav li {
     font-size: 20px;
   }
 }
@@ -189,19 +191,31 @@ header nav ul a:hover {
 }
 
 .top10Actor {
-  width: 100%;
+  display: flex;
+  max-width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(rgb(2, 0, 36) 0%, rgb(9, 9, 121) 70%, rgb(9, 9, 121) 100%);
 }
 .top10Actor .actorGrid {
   width: 60%;
+  height: 100%;
+  margin: auto;
 }
 
 .gridContainer {
   display: grid;
   grid-template-columns: 150px 1.5fr 0.5fr;
   grid-template-rows: 100px 100px;
-  gap: 0 0;
+  gap: 0 20px;
   grid-template-areas: "grid_one grid_two grid_fifth" "grid_one grid_three grid_four";
   width: 100%;
+  margin: 20px 0;
+  background: transparent;
+  color: #f1f1f1;
+}
+.gridContainer a {
+  text-decoration: none;
+  color: aqua;
 }
 
 .grid_one {
@@ -222,4 +236,48 @@ header nav ul a:hover {
 
 .grid_four {
   grid-area: grid_four;
+}
+
+.tomHanks {
+  border-radius: 20px;
+}
+.tomHanks img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.alPacino {
+  border-radius: 20px;
+}
+.alPacino img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@media all and (max-width: 780px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gridContainer .grid_fifth {
+    height: 50px;
+    width: 50px;
+  }
+}
+aside {
+  position: fixed;
+  top: 1;
+}
+
+.menu-burger {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#open-menu {
+  position: relative;
+  display: none;
+  background: none;
 }/*# sourceMappingURL=main.css.map */
